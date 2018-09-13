@@ -1,0 +1,17 @@
+package p803;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+//		Thread t = new java.lang.Thread();
+//		t.start();
+		Thread().start();
+		
+	}
+
+}
+
+/*
+	같은 결과를 얻는다면 최대한 코드를 짧게 쓰고 싶다
+*/

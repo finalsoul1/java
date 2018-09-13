@@ -1,0 +1,32 @@
+package p803;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// Runnable인터페이스가 요구하는 기능을 가진 객체 (기능을 물어봄)
+		Runnable worker = new Worker();
+		
+		Thread t = new Thread(worker, "A");
+		t.start();
+		
+//		Thread t = new java.lang.Thread();
+//		t.start();
+		new Thread().start(); // 스레드객체에 입력값이 없으면 콜스택을 생성했다가 바로 파괴함
+		
+	}
+
+}
+
+class Worker implements Runnable {
+	@Override
+	public void run() {
+		for (int i = 0; i < 10; i++) {
+			System.out.println("i = " + i);
+		}
+	}
+}
+
+
+/*
+	같은 결과를 얻는다면 최대한 코드를 짧게 쓰고 싶다
+*/

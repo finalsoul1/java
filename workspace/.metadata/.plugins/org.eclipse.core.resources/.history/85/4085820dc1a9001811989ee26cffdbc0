@@ -1,0 +1,23 @@
+package p670;
+
+public class Test2 {
+	public static void main(String[] args) {
+		System.out.println(Calculator.add(2, 3));
+		System.out.println(Calculator.add((int)2.0, 3));
+		System.out.println(Calculator.add(2, (int)3.0F));
+	}
+}
+
+// (Type) : 취급하는 자료형을 사용자가 결정해야 한다
+// 지네릭은 static이 안됨. main메소드보다 먼저 메모리에 올라가기 때문에
+class Calculator2<T> {
+	public int add(T a, T b) {
+		return a + b;
+	}
+//	public static double add(double a, int b) {
+//		return a + b;
+//	}
+//	public static float add(int a, float b) {
+//		return a + b;
+//	}
+}

@@ -1,0 +1,26 @@
+// 라이브러리 개발자
+class NewClass {
+//	int newField;
+//
+//	int getNewField() { 
+//		return newField;
+//	}	
+
+	// 버전 1.0 아래 메소드를 제공
+	@Deprecated
+	int oldField;
+
+	@Deprecated
+	int getOldField() { 
+		return oldField;
+	}
+}
+
+class AnnotationEx2 {
+	public static void main(String args[]) {
+		NewClass nc = new NewClass();
+
+		nc.oldField = 10;                     //@Depreacted가 붙은 대상을 사용
+		System.out.println(nc.getOldField()); //@Depreacted가 붙은 대상을 사용
+	}
+}

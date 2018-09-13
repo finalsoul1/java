@@ -1,0 +1,57 @@
+package p794;
+
+public class Test3 {
+	public static void main(String[] args) {
+//		Thread t1 = new MyThread();
+//		t1.setName("A");
+//		t1.start();
+		
+		// class 익명클래스 extends Thread
+		// Thread 클래스를 상속한 어떤 클래스를 인스턴스
+		new Thread() {
+			@Override
+			public void run() {
+			}
+		}.start();
+		
+		// class MyRunnable implements Runnable
+		// Runnable 인터페이스를 구현한 어떤 클래스를 인스턴스
+		new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				
+			}
+		}) {}.start();
+		
+		
+//		try {
+//			MyCounter.count(Thread.currentThread().getName());
+//			} catch (InterruptedException ignore) {}
+//		}
+}
+
+class MyThread extends Thread {
+	@Override
+	public void run() {
+		try {
+		MyCounter.count(Thread.currentThread().getName());
+		} catch (InterruptedException ignore) {}
+	}
+}
+
+class MyRunnable implements Runnable {
+	@Override
+	public void run() {
+
+	}
+}
+
+class MyCounter {
+	public static void count(String who) throws InterruptedException {
+		for (int i = 0; i < 10; i++) {
+			System.out.println(who + i + " ");
+			Thread.sleep(500);
+		}
+	}
+}

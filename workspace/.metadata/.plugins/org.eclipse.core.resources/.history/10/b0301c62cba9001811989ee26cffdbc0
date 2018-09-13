@@ -1,0 +1,32 @@
+package p702;
+
+/**
+ * <b>클래스를 설명하는 API 문서작성을 위한 주석</b>
+ *
+ * @author Seokwon SONG
+ * @see java.lang.StringBuffer
+ * @see java.lang.StringBuilder
+ * @see java.nio.charset.Charset
+ * @since JDK1.0
+ */
+public class Test {
+	/**
+	 * 메소드 설명
+	 * 
+	 * Returns the sum of its arguments, throwing an exception if the result
+	 * overflows an {@code int}.
+	 *
+	 * @param x the first value
+	 * @param y the second value
+	 * @return the result
+	 * @throws ArithmeticException if the result overflows an int
+	 * @since 1.8
+	 */
+	public static void main(String[] args) throws ArithmeticException {
+		// 한 줄 주석
+
+
+		
+	}
+
+}

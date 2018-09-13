@@ -1,0 +1,13 @@
+package p670;
+
+public class Test {
+	public static void main(String[] args) {
+		System.out.println(calculator.add(2, 3));
+	}
+}
+
+class Calculator {
+	public static int add(int a, int b) {
+		return a + b;
+	}
+}

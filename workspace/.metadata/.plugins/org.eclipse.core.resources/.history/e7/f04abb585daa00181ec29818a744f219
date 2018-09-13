@@ -1,0 +1,31 @@
+package p679;
+
+import java.util.List;
+
+public class Test {
+
+	/*
+	 * T, ? 차이
+	 * T : bound
+	 * ? : unbound
+	 * 
+	 *  지네릭은 코딩할 때 타입 안정성을 확보하기 위해 사용하는 기술로
+	 *  컴파일하면 지네릭관련 코드가 모두 사라진다
+	 */
+	
+	List<? extends Object> names = new ArrayList<>();
+	names.add("AA");
+	
+}
+
+
+
+
+class MyBox<T> {
+	List<T> list = new ArrayList<T>;
+	
+	public T getLast() {
+		return list.get(list.size() - 1);
+	}
+	
+}

@@ -1,0 +1,17 @@
+package p702;
+/**
+ * 
+ * @author Seokwon SONG
+ *
+ */
+public class Test {
+	
+	public static void main(String[] args) {
+		// 한 줄 주석
+		
+		/*
+		 * 범위 주석
+		 */
+	}
+
+}

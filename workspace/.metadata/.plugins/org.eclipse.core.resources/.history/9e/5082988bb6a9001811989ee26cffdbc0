@@ -1,0 +1,17 @@
+package p803;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+//		Thread t = new java.lang.Thread();
+//		t.start();
+		new Thread().start(); // 입력값이 없으면 콜스택을 생성했다가 바로 파괴함
+		
+	}
+
+}
+
+/*
+	같은 결과를 얻는다면 최대한 코드를 짧게 쓰고 싶다
+*/

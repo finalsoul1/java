@@ -1,0 +1,13 @@
+package p725;
+
+public class VolatileTest {
+
+	// 휘발성 : 코어의 캐시로부터 값을 가져오지말고
+	// 메모리에서 값을 매번 가져다가 사용함을 보장한다
+	volatile
+	
+	public static void main(String[] args) {
+
+	}
+
+}

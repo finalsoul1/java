@@ -1,0 +1,21 @@
+package p702;
+/**
+ * <b>클래스를 설명하는 API 문서작성을 위한 주석</b>
+ *
+ * @author Seokwon SONG
+ * @see     java.lang.StringBuffer
+ * @see     java.lang.StringBuilder
+ * @see     java.nio.charset.Charset
+ * @since   JDK1.0
+ */
+public class Test {
+	
+	public static void main(String[] args) {
+		// 한 줄 주석
+		
+		/*
+		 * 범위 주석
+		 */
+	}
+
+}

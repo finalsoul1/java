@@ -1,0 +1,16 @@
+package p794;
+
+public class Test {
+	public static void main(String[] args) {
+	
+	}
+}
+
+class Worker implements Runnable {
+	@Override
+	public void run() {
+		for (int i = 0; i < 10; i++) {
+			
+		}
+	}
+}

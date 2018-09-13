@@ -1,0 +1,9 @@
+package p702;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// 한 줄 주석
+	}
+
+}
